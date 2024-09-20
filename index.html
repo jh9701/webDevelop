@@ -32,22 +32,23 @@ function c() {
 setTimeout(a, 3000); // 3초후 실행
 setTimeout(b, 3000);
 setTimeout(c, 3000);
+
 setInterval(function() {
   console.log("Hello!");
-}, 1000); // 1초마다 "Hello, world!" 출력
+}, 1000); 
 
-setTimeout(
- function() { // anonymous function 익명 함수
- console.log('Done!');
- },
- 3000 // 3000 milliseconds (3 seconds)
-)
+// setTimeout(
+//  function() { // anonymous function 익명 함수
+//  console.log('Done!');
+//  },
+//  3000 // 3000 milliseconds (3 seconds)
+// )
 
  // TODO: Add setTimeout code
-setTimeout(
- () => { document.write('...Hello again!')},
- 2000
-);
+// setTimeout(
+//  () => { document.write('...Hello again!')},
+//  2000
+// );
  </script>
 </body>
 </html>
