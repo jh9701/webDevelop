@@ -10,7 +10,7 @@ function getMessage(name) {
  const message = `Hello, ${name}!`;
  return message;
 }
-const message = getMessage('Ornella');
+const message = getMessage('지훈');
 document.write(message);
 
 function displayDone() {
@@ -18,20 +18,20 @@ function displayDone() {
 }
 
 function a() {
- console.log('안녕하세요');
+ document.write("안녕하세요<br>");
 }
 
 function b() {
- console.log('김지훈 입니다');
+ document.write("김지훈 입니다<br>");
 }
 
 function c() {
- console.log('저는 현재 대학생 입니다.');
+ document.write("저는 현재 대학생 입니다.");
 }
 
 setTimeout(a, 3000); // 3초후 실행
-setTimeout(b, 3000);
-setTimeout(c, 3000);
+setTimeout(b, 6000);
+setTimeout(c, 9000);
 
 setInterval(function() {
   console.log("Hello!");
