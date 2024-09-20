@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Message</title>
+</head>
+<body>
+ <script>
+ // TODO: Add hello code
+function getMessage(name) {
+ const message = `Hello, ${name}!`;
+ return message;
+}
+const message = getMessage('Ornella');
+document.write(message);
+
+function displayDone() {
+ console.log('Done!');
+}
+
+function a() {
+ console.log('안녕하세요');
+}
+
+function b() {
+ console.log('김지훈 입니다');
+}
+
+function c() {
+ console.log('저는 현재 대학생 입니다.');
+}
+
+setTimeout(a, 3000); // 3초후 실행
+setTimeout(b, 3000);
+setTimeout(c, 3000);
+setInterval(function() {
+  console.log("Hello!");
+}, 1000); // 1초마다 "Hello, world!" 출력
+
+setTimeout(
+ function() { // anonymous function 익명 함수
+ console.log('Done!');
+ },
+ 3000 // 3000 milliseconds (3 seconds)
+)
+
+ // TODO: Add setTimeout code
+setTimeout(
+ () => { document.write('...Hello again!')},
+ 2000
+);
+ </script>
+</body>
+</html>
