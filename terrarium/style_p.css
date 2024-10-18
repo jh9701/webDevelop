@@ -1,51 +1,56 @@
 h1 {
     color: blue;
+    font-size: 4vw; 
+    width: 40vw;    
+    height: 19vh;   
     text-align: center;
-   }
-body {
- font-family: helvetica, arial, sans-serif;
+    margin-top: 10px;
 }
+ 
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+   
 #left-container {
-    background-color: #eee;
-    width: 15%;
     left: 0px;
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    padding: 10px;
-    justify-content: space-between; /* 요소 간의 간격을 균등하게 */
 }
 #right-container {
-    background-color: #eee;
-    width: 15%;
     right: 0px;
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    padding: 10px;
 }
 .container {
-    background-color: #eee;
-    width: 15%;
+    background-color: #ccc;
+    width: 16%;
     top: 0px;
     position: absolute;
     height: 100%;
     padding: 10px;
 }
+
 .plant-holder {
     position: relative;
-    height: 14.2%;
-    left: 0px;
-    padding: 1px;
+    width: 38%;
+    height: auto;
+    margin: 5%;
+    left: 20%;
 }
 .plant {
-    position: absolute;
+    position: relative;
     max-width: 100%;
-    max-height: 100%;
+    width: auto;
+    height: auto;
     z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
 }
+
 .jar-walls {
     height: 80%;
     width: 60%;
@@ -54,18 +59,18 @@ body {
     position: absolute;
     bottom: 0.5%;
     left: 20%;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: 1;
 }
 .jar-top {
+    border-radius: 1rem 1rem 0 0;
     width: 50%;
     height: 5%;
     background: #d1e1df;
     position: absolute;
-    border-radius: 1rem 1rem 0 0;
     bottom: 80.5%;
     left: 25%;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 1;
 }
 .jar-bottom {
@@ -73,11 +78,11 @@ body {
     height: 1%;
     background: #d1e1df;
     position: absolute;
-    border-radius: 0 0 1rem 1rem;
     bottom: 0%;
     left: 25%;
     opacity: 0.7;
-   }
+    border-radius: 1rem 1rem 0 0;
+}
 .dirt {
     width: 60%;
     height: 5%;
@@ -89,7 +94,7 @@ body {
     opacity: 0.7;
     z-index: -1;
 }
-   
+
 .jar-glossy-short {
     width: 5%;
     height: 10%;
