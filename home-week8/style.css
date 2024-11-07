@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4d4;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+    align-items: center; /* 가로 정렬도 중앙 */
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 70%;
+    min-height: 50%;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 60px;
+    color: red;
+}
+p {
+    margin: 10px 0;
+}
+/* 강조 단어와 에러 단어 스타일 그대로 유지 */
+.highlight {
+    background-color: yellow;
+}
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;   
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#message {
+    color: #c3c3c3;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; /* 초기에는 숨김 */
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 8%;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: red;
+}
+
+#modal-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.input-active {
+    background-color: #0f0;
+}
+
+.input-typing {
+    color: #0f0;
+    transform: scale(1.2);
+    
+}
