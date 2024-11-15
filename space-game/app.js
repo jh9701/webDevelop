@@ -47,18 +47,12 @@ window.onload = async () => {
     const enemyImg = await loadTexture('assets/enemyShip.png');
     const background = await loadTexture('assets/starBackground.png');
 
-    var ptrn = ctx.createPattern(background, 'repeat');
-    
-
-    const starPatternCanvas = createStarPattern();
-    const pattern = ctx.createPattern(starPatternCanvas, 'repeat');
+    var ptrn = ctx.createPattern(background, 'repeat');    
     ctx.fillStyle = ptrn;
 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-
     ctx.drawImage(heroImg, canvas.width / 2 - 45, canvas.height - (canvas.height / 4));
-
     const heroImgWidth = heroImg.width / 2;
     const heroImgHeight = heroImg.height / 2;
     ctx.drawImage(heroImg, canvas.width / 2 - 100, canvas.height - (canvas.height / 4.5), heroImgWidth, heroImgHeight);
