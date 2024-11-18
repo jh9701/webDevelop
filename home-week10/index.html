@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <title>환율 정보</title>
+</head>
+<body>
+    <h2>환율 정보</h2>
+    <p>API 키 입력</p>
+    <input type="text" id="api-key" placeholder="API 키를 입력하세요" />
+    <button id="saveApiKey">API 키 저장</button>
+    
+    <p>1 USD = <span id="exchange-rate-usd">-</span> KRW</p>
+    <p>1 CNY = <span id="exchange-rate-cny">-</span> KRW</p>
+    <p>1 JPY = <span id="exchange-rate-jpy">-</span> KRW</p>
+    <button id="fetchRate">환율 업데이트</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
