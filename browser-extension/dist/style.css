@@ -6,7 +6,9 @@ blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
 input,select,textarea,button{vertical-align:middle;font-size:100%}
 button{border:0 none;background-color:transparent;cursor:pointer}
 table{border-collapse:collapse;border-spacing:0}
+
 body{-webkit-text-size-adjust:none} 
+
 input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html
 input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
@@ -77,4 +79,3 @@ p {
 
 /* .result {
     display: none;
-} */
