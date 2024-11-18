@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Currency Exchange Rates",
+  "version": "1.0",
+  "description": "환율 정보를 제공 확장 프로그램입니다.",
+  "action": {
+    "default_popup": "index.html"  
+  },
+  "permissions": ["storage"]
+}
